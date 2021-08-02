@@ -8,8 +8,8 @@ import java.util.stream.Stream;
 
 public class FromDirectoryExample {
 
-	public static void main(String[] args) throws IOException{
-		Path path = Paths.get("D:/00_Limhs");
+	public static void main(String[] args) throws IOException {
+		Path path = Paths.get("D:/");
 		Stream<Path> stream = Files.list(path);
 		stream.forEach( p -> System.out.println(p.getFileName()));
 	}
