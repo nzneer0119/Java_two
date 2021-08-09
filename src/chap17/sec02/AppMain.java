@@ -1,8 +1,11 @@
 package chap17.sec02;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
+
 public class AppMain extends Application{
 	
-	@override
+	@Override
 	public void start(Stage primaryStage) throws Exception {
 		primaryStage.show();
 	}

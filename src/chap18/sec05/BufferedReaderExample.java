@@ -14,8 +14,12 @@ public class BufferedReaderExample {
 		BufferedReader br = new BufferedReader(reader);
 		
 		System.out.print("입력 : ");
-		String lineString = br.readLine();
+		String lineString = br.readLine();               // 줄 단위로 읽기
 		
 		System.out.println("출력 : " + lineString);
+		
+		br.close();
+		reader.close();
+		is.close();
 	}
 }
